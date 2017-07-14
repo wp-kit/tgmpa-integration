@@ -1,0 +1,35 @@
+{
+	"name": "wp-kit/tgmpa-integration",
+	"description": "A Wordpress PHP Component to handle TGMPA Integration",
+	"keywords": ["wordpress", "themosis", "oop", "tgmpa"],
+	"homepage" : "https://github.com/wp-kit/tgmpa-integration",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Creative Little Dots",
+			"email" : "tech@creativelittledots.co.uk",
+			"homepage" : "https://creativelittledots.co.uk/",
+			"role" : "Developers"
+		}
+	],
+	"require": {
+        "php": ">=5.6.4",
+        "wp-kit/integrations": "dev-master"
+    },
+	"type": "library",
+	"autoload": {
+        "psr-4": {
+            "WPKit\\Integrations\\Tgmpa\\": "src/Tgmpa" 
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "config": {
+		"preferred-install": "dist"
+	},
+	"repositories": [
+	],
+	"scripts": {
+	}
+}
