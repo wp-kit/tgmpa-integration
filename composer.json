@@ -1,6 +1,6 @@
 {
 	"name": "wp-kit/tgmpa-integration",
-	"description": "A Wordpress PHP Component to handle TGMPA Integration",
+	"description": "A Wordpress PHP Component that handles TGMPA Integration",
 	"keywords": ["wordpress", "themosis", "oop", "tgmpa"],
 	"homepage" : "https://github.com/wp-kit/tgmpa-integration",
 	"license": "MIT",
