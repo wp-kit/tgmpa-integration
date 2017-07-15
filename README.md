@@ -127,4 +127,4 @@ PHP 5.6+
 
 ## License
 
-WPKit VC Integration is open-sourced software licensed under the MIT License.
+WPKit TGMPA Integration is open-sourced software licensed under the MIT License.
