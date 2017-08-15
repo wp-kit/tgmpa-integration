@@ -6,6 +6,14 @@
 	
 	class TgmpaServiceProvider extends Integration {
 		
+		public function boot() {
+		
+			$this->publishes([
+				__DIR__.'/../../config/tgmpa.config.php' => config_path('tgmpa.config.php')
+			], 'config');
+
+		}
+		
 		public function startIntegration() {
 			
 			$this->settings = $this->app['config.factory']->get('tgmpa', [
