@@ -57,65 +57,19 @@ $provider->register(); //register service provider
 
 ## Config
 
-Now just add the configuration file in your config directory:
+The recommended method of installing config files for WPKit Components is via ```wp-kit/vendor-publish``` command.
 
-```php
-// In theme/resources/config/vc.config.php
+First, [install WP CLI](http://wp-cli.org/), and then install the package via:
 
-return [
+```wp package install wp-kit/vendor-publish```
 
-    /*
-    |--------------------------------------------------------------------------
-    | TGMPA Plguins
-    |--------------------------------------------------------------------------
-    |
-    | Tell the Service Provider which plugins to register
-    |
-    */
+Once installed you can run:
 
-    'plugins' => [
-	    
-	    
-	    // This is an example of how to include a plugin bundled with a theme.
-		[
-			'name'               => 'TGM Example Plugin', // The plugin name.
-			'slug'               => 'tgm-example-plugin', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
-			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-		],
+```wp kit vendor:publish```
 
-		// This is an example of how to include a plugin from the WordPress Plugin Repository.
-		[
-			'name'      => 'BuddyPress',
-			'slug'      => 'buddypress',
-			'required'  => false,
-		],
-	    
-	    
-    ],
+For more information, please visit [wp-kit/vendor-publish](https://github.com/wp-kit/vendor-publish).
 
-    /*
-    |--------------------------------------------------------------------------
-    | TGMPA Plugins Path
-    |--------------------------------------------------------------------------
-    |
-    | Tell the Server Provider where to find Plugins to load
-    | plugins from. By default the below function loads from:
-    |
-    | ~/theme/resources/plugins/
-    |
-    */
-
-    'plugins_path' => resources_path('plugins')
-
-];
-
-```
+Alternatively, you can place the [config file(s)](config) in your ```theme/resources/config``` directory manually.
 
 ## Requirements
 
