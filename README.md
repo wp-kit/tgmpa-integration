@@ -1,14 +1,14 @@
-# WPKit TGMPA Integration
+# wp-kit/tgmpa-integration
 
-This is a Wordpress PHP Component that handles TGMPA Configuration via a [config file](config/tgmpa.config.php).
+This is a Wordpress PHP Component that handles ```TGMPA``` configuration via a [config file](config/tgmpa.config.php).
 
-TGMPA (TGM Plugin Activation) is a PHP library that allows you to easily require or recommend plugins for your WordPress themes (and plugins). Read more about it [here](http://tgmpluginactivation.com/).
+```TGMPA``` [TGM Plugin Activation] is a PHP library that allows you to easily require or recommend plugins for your WordPress themes (and plugins). Read more about it [here](http://tgmpluginactivation.com/).
 
-This PHP Component was built to run within an Illuminate Container so is perfect for frameworks such as Themosis.
+This PHP Component was built to run within an ```Illuminate\Container\Container``` so is perfect for frameworks such as ```Themosis```.
 
 ## Installation
 
-If you're using Themosis, install via composer in the Themosis route folder, otherwise install in your theme folder:
+If you're using ```Themosis```, install via ```Composer``` in the root of your ```Themosis``` installation, otherwise install in your ```Composer``` driven theme folder:
 
 ```php
 composer require "wp-kit/tgmpa-integration"
@@ -34,7 +34,7 @@ return [
 
 **Within functions.php**
 
-If you are just using this component standalone then add the following the functions.php
+If you are just using this component standalone then add the following the ```functions.php```
 
 ```php
 // within functions.php
@@ -58,7 +58,7 @@ $provider->register(); //register service provider
 
 ### Add Config File
 
-The recommended method of installing config files for WPKit Components is via ```wp-kit/vendor-publish``` command.
+The recommended method of installing config files for ```wp-kit``` Components is via ```wp-kit/vendor-publish``` command.
 
 First, [install WP CLI](http://wp-cli.org/), and then install the package via:
 
@@ -80,10 +80,8 @@ Please install and study the default [config file](config/tgmpa.config.php) as d
 
 Wordpress 4+
 
-Visual Composer 4+
-
 PHP 5.6+
 
 ## License
 
-WPKit TGMPA Integration is open-sourced software licensed under the MIT License.
+wp-kit/tgmpa-integration is open-sourced software licensed under the MIT License.
