@@ -1,6 +1,6 @@
 # wp-kit/tgmpa-integration
 
-This is a Wordpress PHP Component that handles [```TGMPA```]((http://tgmpluginactivation.com/)) configuration via a [config file](config/tgmpa.config.php).
+This is a Wordpress PHP Component that handles [```TGMPA```](http://tgmpluginactivation.com/) configuration via a [config file](config/tgmpa.config.php).
 
 ```TGMPA``` (TGM Plugin Activation) is a PHP library that allows you to easily require or recommend plugins for your WordPress themes (and plugins).
 
