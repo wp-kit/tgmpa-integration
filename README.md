@@ -1,14 +1,14 @@
 # wp-kit/tgmpa-integration
 
-This is a Wordpress PHP Component that handles ```TGMPA``` configuration via a [config file](config/tgmpa.config.php).
+This is a Wordpress PHP Component that handles [```TGMPA```]((http://tgmpluginactivation.com/)) configuration via a [config file](config/tgmpa.config.php).
 
-```TGMPA``` [TGM Plugin Activation] is a PHP library that allows you to easily require or recommend plugins for your WordPress themes (and plugins). Read more about it [here](http://tgmpluginactivation.com/).
+```TGMPA``` (TGM Plugin Activation) is a PHP library that allows you to easily require or recommend plugins for your WordPress themes (and plugins).
 
-This PHP Component was built to run within an ```Illuminate\Container\Container``` so is perfect for frameworks such as ```Themosis```.
+This PHP Component was built to run within an [```Illuminate\Container\Container```](https://github.com/illuminate/container/blob/master/Container.php) so is perfect for frameworks such as [```Themosis```](http://framework.themosis.com/).
 
 ## Installation
 
-If you're using ```Themosis```, install via ```Composer``` in the root of your ```Themosis``` installation, otherwise install in your ```Composer``` driven theme folder:
+If you're using ```Themosis```, install via [```Composer```](https://getcomposer.org/) in the root of your ```Themosis``` installation, otherwise install in your ```Composer``` driven theme folder:
 
 ```php
 composer require "wp-kit/tgmpa-integration"
