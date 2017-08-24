@@ -17,7 +17,7 @@
 		public function startIntegration() {
 			
 			$this->settings = $this->app['config.factory']->get('tgmpa', [
-				'plugins' = [],
+				'plugins' => [],
 				'plugins_path' => resources_path('plugins')
 			]);
 			
