@@ -21,10 +21,7 @@
 	"autoload": {
         "psr-4": {
             "WPKit\\Integrations\\Tgmpa\\": "src/Tgmpa" 
-        },
-        "files": [
-            "src/helpers.php"
-        ]
+        }
     },
     "config": {
 		"preferred-install": "dist"
