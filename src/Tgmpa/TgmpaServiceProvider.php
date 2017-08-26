@@ -16,6 +16,16 @@
 		
 		public function startIntegration() {
 			
+			if( ! isset( $GLOBALS['tgmpa'] ) ) {
+			
+				if ( did_action( 'plugins_loaded' ) ) {
+					load_tgm_plugin_activation();
+				} else {
+					add_action( 'plugins_loaded', 'load_tgm_plugin_activation' );
+				}
+				
+			}
+			
 			$this->settings = $this->app['config.factory']->get('tgmpa', [
 				'plugins' => [],
 				'plugins_path' => resources_path('plugins')
