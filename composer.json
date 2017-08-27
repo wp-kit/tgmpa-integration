@@ -1,7 +1,7 @@
 {
 	"name": "wp-kit/tgmpa-integration",
 	"description": "A wp-kit component that handles TGMPA configuration",
-	"keywords": ["wordpress", "themosis", "oop", "tgmpa"],
+	"keywords": ["wordpress", "themosis", "wp-kit", "assely", "oop", "tgmpa", "TGM Plugin Activation"],
 	"homepage" : "https://github.com/wp-kit/tgmpa-integration",
 	"license": "MIT",
 	"authors": [
