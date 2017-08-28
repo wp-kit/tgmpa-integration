@@ -14,7 +14,7 @@
 	],
 	"require": {
         "php": ">=5.6.4",
-        "wp-kit/integrations": "dev-master",
+        "wp-kit/integrations": "2.*",
 		"tgmpa/tgm-plugin-activation": "2.*"
     },
 	"type": "library",
@@ -22,12 +22,5 @@
         "psr-4": {
             "WPKit\\Integrations\\Tgmpa\\": "src/Tgmpa" 
         }
-    },
-    "config": {
-		"preferred-install": "dist"
-	},
-	"repositories": [
-	],
-	"scripts": {
-	}
+    }
 }
