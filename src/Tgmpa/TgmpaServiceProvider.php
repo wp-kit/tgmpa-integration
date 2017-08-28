@@ -6,6 +6,11 @@
 	
 	class TgmpaServiceProvider extends Integration {
 		
+		/**
+	     * Boot the service provider.
+	     *
+	     * @return void
+	     */
 		public function boot() {
 		
 			$this->publishes([
@@ -14,6 +19,11 @@
 
 		}
 		
+		/**
+	     * Start the integration
+	     *
+	     * @return void
+	     */
 		public function startIntegration() {
 			
 			if( ! isset( $GLOBALS['tgmpa'] ) ) {
