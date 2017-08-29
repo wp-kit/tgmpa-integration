@@ -26,6 +26,12 @@
 	     */
 		public function startIntegration() {
 			
+			if( defined( 'WP_CLI' ) && WP_CLI ) {
+				
+				return false;
+				
+			}
+			
 			if( ! isset( $GLOBALS['tgmpa'] ) ) {
 			
 				if ( did_action( 'plugins_loaded' ) ) {
