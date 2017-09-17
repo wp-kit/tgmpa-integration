@@ -3,6 +3,7 @@
 	namespace WPKit\Integrations\Tgmpa;
 	
 	use WPKit\Integrations\Integration;
+	use TGM_Plugin_Activation;
 	
 	class TgmpaServiceProvider extends Integration {
 		
@@ -34,11 +35,7 @@
 			
 			if( ! isset( $GLOBALS['tgmpa'] ) ) {
 			
-				if ( did_action( 'plugins_loaded' ) ) {
-					load_tgm_plugin_activation();
-				} else {
-					add_action( 'plugins_loaded', 'load_tgm_plugin_activation' );
-				}
+				$GLOBALS['tgmpa'] = TGM_Plugin_Activation::get_instance();
 				
 			}
 			
