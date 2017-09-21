@@ -3,7 +3,7 @@
 	namespace WPKit\Integrations\Tgmpa;
 	
 	use WPKit\Integrations\Integration;
-	use TGM_Plugin_Activation;
+	use TGM\TGM_Plugin_Activation;
 	
 	class TgmpaServiceProvider extends Integration {
 		
